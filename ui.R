@@ -22,7 +22,7 @@ ui <- fluidPage(
     setBackgroundImage(
         src = "background.svg"
     ),
-    headerPanel(h1("İBB 2020 YILI LOKASYON BAZINDA ", br(), "ÇEVRESEL İZLEME VE KONTROL VERİLERİ", align = "center"), windowTitle = "İBB ÇEVRESEL İZLEME VE KONTROL VERİLERİ"),
+    headerPanel(div(img(style="width : 25%" , src="logo.png"), h1("İBB 2020 YILI LOKASYON BAZINDA ", br(), "ÇEVRESEL İZLEME VE KONTROL VERİLERİ"), align = "center") , windowTitle = "İBB ÇEVRESEL İZLEME VE KONTROL VERİLERİ"),
     fluidRow(
         box(width = 4, selectInput("ilce", label="İLÇE", choices = c("Aksaray","Alibeyköy","Arnavutköy","Avcılar","Bağcılar","Başakşehir","Beşiktaş","Büyükada","Çatladıkapı", "Esenler","Esenyurt", "Göztepe", "Kadıköy", "Kağıthane 1", "Kağıthane 2", "Kandilli 1", "Kandilli 2", "Kartal", "Kumköy", "Maslak", "Mecidiyeköy", "Sancaktepe", "Sarıyer", "Selimiye", "Silivri", "Sultanbeyli", "Sultangazi 1", "Sultangazi 2", "Sultangazi 3", "Sultangazi 4", "Şile", "Şirinevler", "Tuzla", "Ümraniye 1", "Ümraniye 2","Üsküdar 1", "Üsküdar 2", "Yenibosna"), selected = "Beşiktaş", width='100%')),
         box(width = 4, selectInput("öznitelik", label="ÖZNİTELİK", choices = c("CO","Güneş Radrasyon","Hava Basıncı","Hava Sıcaklığı","NO","NO2","NOX","Nem", "PM10", "PM2.5", "Rüzgar Hızı", "Rüzgar Yönü", "SO2" ), selected = "CO", width='100%')),
